@@ -1,0 +1,67 @@
+UX Schema Guidelines
+
+1. Visual Hierarchy
+- Clean, professional design
+- Education-focused imagery
+- Saudi cultural elements
+- Clear CTAs
+- Mobile-first approach
+
+2. Color Scheme
+Primary:
+- Blue (#2B6CB0) - Trust & Education
+- Orange (#ED8936) - Action & Energy
+Secondary:
+- White (#FFFFFF) - Clean space
+- Gray (#4A5568) - Text
+- Green (#48BB78) - Success/WhatsApp
+
+3. Typography
+- Arabic: Cairo font family
+- English: Inter font family
+- Hierarchy:
+  * H1: 2.5rem
+  * H2: 2rem
+  * Body: 1rem
+  * CTAs: 1.125rem
+
+4. Components
+Opt-in Page:
+- Sticky header
+- Hero section
+- Benefits grid
+- Form component
+- Social proof
+- Footer
+
+Sales Page:
+- Video player
+- Feature cards
+- Pricing table
+- FAQ accordion
+- WhatsApp button
+- Payment section
+
+Thank You Page:
+- Success message
+- Next steps cards
+- Resource links
+- Support contact
+
+5. Responsive Breakpoints
+- Mobile: 320px
+- Tablet: 768px
+- Desktop: 1024px
+- Large: 1280px
+
+6. Loading States
+- Skeleton screens
+- Progress indicators
+- Form submission states
+- Payment processing states
+
+7. Accessibility
+- WCAG 2.1 compliance
+- RTL support
+- High contrast options
+- Screen reader optimization 

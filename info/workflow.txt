@@ -1,0 +1,47 @@
+Education Funnel Workflow
+
+1. Entry Point (Opt-in Page)
+- Initial traffic sources: Instagram & Amazon
+- Zero cost entry point (free lead magnet)
+- Lead magnet: Free English learning resource/assessment
+- Collect: Name, Email, Phone
+- Direct integration with HubSpot for lead capture
+- Immediate redirect to Sales Page
+
+2. Sales Page
+- Video presentation showcasing bundle services
+- Key components:
+  * English learning programs
+  * Course materials
+  * Live sessions
+  * Support system
+- Price point: 197 USD (SAR 738.75)
+- Payment integration
+- WhatsApp integration for direct support
+
+3. Email Follow-up Sequence
+a) Restate Offer Email
+   - Sent immediately if no purchase
+   - Highlight main benefits
+   - Include social proof
+
+b) Benefits Email
+   - Sent 24 hours after
+   - Deep dive into program features
+   - Student success stories
+
+c) Extra Benefits Email
+   - Sent 48 hours after
+   - Bonus materials
+   - Limited time offer
+
+4. Thank You Page
+- Purchase confirmation
+- Next steps
+- WhatsApp group invitation
+- Additional resources access
+
+Conversion Metrics:
+- Opt-in to Sales: 0% (needs optimization)
+- Sales Page to Purchase: 5%
+- Email sequence open rates: 13-15% 
