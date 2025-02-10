@@ -8,6 +8,7 @@ import type { TestimonialCardProps } from '../components/TestimonialCard';
 import { BackgroundBeams } from './components/ui/BackgroundBeams';
 import { SparklesCore } from './components/ui/SparklesCore';
 import { BackgroundBeamsWithCollision } from './components/ui/BackgroundBeamsWithCollision';
+import Image from 'next/image';
 
 // Dynamically import components with ssr: false to prevent hydration mismatch
 const CountdownTimer = dynamic(() => import("../components/CountdownTimer"), { 
@@ -103,10 +104,12 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 rounded-3xl transform rotate-6 opacity-20" />
             <div className="relative h-full rounded-2xl overflow-hidden">
-              <img
+              <Image
                 src="/hero.jpg"
                 alt="طالب يتعلم اللغة الإنجليزية"
-                className="object-cover w-full h-full"
+                className="object-cover"
+                fill
+                priority
               />
             </div>
           </motion.div>
@@ -152,10 +155,12 @@ export default function Home() {
             className="bg-white p-8 rounded-xl shadow-lg order-1 md:order-2"
           >
             <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-              <img
+              <Image
                 src="/sectiontwo.jpg"
                 alt="طالب يتعلم اللغة الإنجليزية"
-                className="object-cover w-full h-full"
+                className="object-cover"
+                fill
+                priority
               />
             </div>
           </motion.div>

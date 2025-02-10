@@ -42,7 +42,6 @@ const plans = [
 
 export default function SalesPage() {
   const [mounted, setMounted] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<number | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -120,7 +119,6 @@ export default function SalesPage() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => setSelectedPlan(index)}
                     className={`w-full py-3 rounded-full text-center ${
                       plan.popular
                         ? 'bg-blue-500 text-white hover:bg-blue-600'
