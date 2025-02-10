@@ -13,8 +13,8 @@ interface SparklesCoreProps {
 export const SparklesCore = (props: SparklesCoreProps) => {
   const {
     background = "transparent",
-    minSize: _minSize,
-    maxSize: _maxSize,
+    minSize = 0.4,
+    maxSize = 1,
     particleDensity = 100,
     className,
     particleColor = "#fff",
@@ -38,7 +38,7 @@ export const SparklesCore = (props: SparklesCoreProps) => {
       canvas.width = width;
       canvas.height = height;
 
-      particles.current = createParticles(particleDensity, width, height);
+      particles.current = createParticles(particleDensity, width, height, minSize, maxSize);
     });
 
     resizeObserver.observe(canvas);
@@ -63,7 +63,7 @@ export const SparklesCore = (props: SparklesCoreProps) => {
     return () => {
       resizeObserver.disconnect();
     };
-  }, [background, particleColor, particleDensity]);
+  }, [background, particleColor, particleDensity, minSize, maxSize]);
 
   return (
     <canvas
@@ -116,10 +116,10 @@ class Particle {
   }
 }
 
-function createParticles(density: number, width: number, height: number) {
+function createParticles(density: number, width: number, height: number, minParticleSize = 0.4, maxParticleSize = 1) {
   const particles: Array<Particle> = [];
   for (let i = 0; i < density; i++) {
-    const size = Math.random() * 1 + 0.4;
+    const size = Math.random() * (maxParticleSize - minParticleSize) + minParticleSize;
     const x = Math.random() * width;
     const y = Math.random() * height;
     const speedX = Math.random() * 0.2 - 0.1;
