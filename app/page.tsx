@@ -3,10 +3,8 @@
 import dynamic from 'next/dynamic';
 import { motion } from "framer-motion";
 import { BsWhatsapp, BsCheckCircleFill } from "react-icons/bs";
-import { FaGift, FaPlane, FaFootballBall, FaMobile } from "react-icons/fa";
+import { FaPlane, FaFootballBall, FaMobile } from "react-icons/fa";
 import type { TestimonialCardProps } from '../components/TestimonialCard';
-import { BackgroundBeams } from './components/ui/BackgroundBeams';
-import { SparklesCore } from './components/ui/SparklesCore';
 import { BackgroundBeamsWithCollision } from './components/ui/BackgroundBeamsWithCollision';
 import Image from 'next/image';
 
