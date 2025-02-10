@@ -13,8 +13,8 @@ interface SparklesCoreProps {
 export const SparklesCore = (props: SparklesCoreProps) => {
   const {
     background = "transparent",
-    minSize = 0.4,
-    maxSize = 1,
+    minSize: _minSize,
+    maxSize: _maxSize,
     particleDensity = 100,
     className,
     particleColor = "#fff",
