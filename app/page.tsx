@@ -77,6 +77,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="text-white text-xl px-12 py-4 rounded-full shadow-lg font-bold overflow-hidden relative transition-all duration-300 hover:shadow-2xl"
+              onClick={() => window.location.href = '/sales'}
             >
               <span className="relative z-10">👋 ابدأ رحلتك الآن</span>
               <motion.div
@@ -246,6 +247,7 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 text-white text-xl px-12 py-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 font-bold"
+            onClick={() => window.location.href = '/sales'}
           >
             👉 سجل الآن وابدأ رحلتك
           </motion.button>

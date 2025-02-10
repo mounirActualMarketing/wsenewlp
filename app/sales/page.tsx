@@ -124,6 +124,7 @@ export default function SalesPage() {
                         ? 'bg-blue-500 text-white hover:bg-blue-600'
                         : 'bg-gray-100 hover:bg-gray-200'
                     }`}
+                    onClick={() => window.location.href = '/thank-you'}
                   >
                     اختر هذه الخطة
                   </motion.button>
