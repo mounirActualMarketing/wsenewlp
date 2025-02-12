@@ -34,16 +34,16 @@ export default function CountdownTimer() {
     <div className="mb-8 text-center">
       <h3 className="text-xl font-bold mb-4">⏳ العرض ينتهي خلال:</h3>
       <div className="flex justify-center gap-4 text-2xl font-bold">
-        <motion.div whileHover={{ scale: 1.1 }} className="bg-blue-900 text-white px-4 py-2 rounded-lg">
+        <motion.div whileHover={{ scale: 1.1 }} className="bg-[#0f20a7] text-white px-4 py-2 rounded-lg">
           {timeLeft.days} أيام
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="bg-blue-800 text-white px-4 py-2 rounded-lg">
+        <motion.div whileHover={{ scale: 1.1 }} className="bg-[#0f20a7]/90 text-white px-4 py-2 rounded-lg">
           {timeLeft.hours} ساعة
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="bg-blue-700 text-white px-4 py-2 rounded-lg">
+        <motion.div whileHover={{ scale: 1.1 }} className="bg-[#df3f41] text-white px-4 py-2 rounded-lg">
           {timeLeft.minutes} دقيقة
         </motion.div>
-        <motion.div whileHover={{ scale: 1.1 }} className="bg-blue-600 text-white px-4 py-2 rounded-lg">
+        <motion.div whileHover={{ scale: 1.1 }} className="bg-[#df3f41]/90 text-white px-4 py-2 rounded-lg">
           {timeLeft.seconds} ثانية
         </motion.div>
       </div>

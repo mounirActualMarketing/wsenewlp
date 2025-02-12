@@ -35,11 +35,11 @@ const FAQAccordion = () => {
           >
             <motion.span
               animate={{ rotate: activeIndex === index ? 180 : 0 }}
-              className="text-blue-600 flex-shrink-0"
+              className="text-[#df3f41] flex-shrink-0"
             >
               ▼
             </motion.span>
-            <span className="font-semibold flex-grow">{item.question}</span>
+            <span className="font-semibold flex-grow text-[#0f20a7]">{item.question}</span>
           </motion.button>
           
           <AnimatePresence>
@@ -51,7 +51,7 @@ const FAQAccordion = () => {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <div className="p-4 bg-gray-50">
+                <div className="p-4 bg-[#0f20a7]/5">
                   {item.answer}
                 </div>
               </motion.div>

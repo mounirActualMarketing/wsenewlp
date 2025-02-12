@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from "framer-motion";
 import { BsWhatsapp, BsCheckCircleFill } from "react-icons/bs";
-import { FaPlane, FaFootballBall, FaMobile } from "react-icons/fa";
+import { FaPlane, FaFutbol, FaMobile } from "react-icons/fa";
 import type { TestimonialCardProps } from '../components/TestimonialCard';
 import { BackgroundBeamsWithCollision } from './components/ui/BackgroundBeamsWithCollision';
 import Image from 'next/image';
@@ -93,7 +93,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white font-noto">
+    <div className="font-noto">
       {/* Hero Section */}
       <BackgroundBeamsWithCollision>
         <div className="max-w-7xl mx-auto">
@@ -108,7 +108,7 @@ export default function Home() {
                 <h1 className="text-4xl md:text-6xl font-bold text-white space-y-4">
                   <span className="block leading-tight">تعلم الإنجليزية بثقة</span>
                   <div className="relative inline-block">
-                    <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-violet-200 via-white to-violet-200 leading-relaxed">
+                    <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#df3f41] via-white to-[#df3f41] leading-relaxed">
                       واحصل على مكافآت حصرية!
                     </span>
                   </div>
@@ -159,7 +159,7 @@ export default function Home() {
                     duration: 4,
                     ease: "linear",
                   }}
-                  className="bg-[linear-gradient(to_right,#123256,#de4146,#123256,#de4146,#123256)] absolute z-0 inset-0 w-[400%]"
+                  className="bg-[linear-gradient(to_right,#0f20a7,#df3f41,#0f20a7,#df3f41,#0f20a7)] absolute z-0 inset-0 w-[400%]"
                 />
               </motion.button>
             </div>
@@ -171,7 +171,7 @@ export default function Home() {
               transition={{ delay: 0.3 }}
               className="relative aspect-square"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 rounded-3xl transform rotate-6 opacity-20" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0f20a7] via-[#df3f41] to-[#0f20a7] rounded-3xl transform rotate-6 opacity-20" />
               <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
                 <Image
                   src="/hero.jpg"
@@ -191,7 +191,7 @@ export default function Home() {
         {/* Modern Stats & Features Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f20a7] to-[#df3f41] mb-4">
               نظام تعليمي متكامل يناسب طموحك
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -207,7 +207,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-2xl shadow-lg text-center"
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2">+3M</div>
+              <div className="text-3xl font-bold text-[#0f20a7] mb-2">+3M</div>
               <div className="text-gray-600">طالب حول العالم</div>
             </motion.div>
             <motion.div
@@ -217,7 +217,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="bg-white p-6 rounded-2xl shadow-lg text-center"
             >
-              <div className="text-3xl font-bold text-violet-600 mb-2">98%</div>
+              <div className="text-3xl font-bold text-[#df3f41] mb-2">98%</div>
               <div className="text-gray-600">نسبة رضا الطلاب</div>
             </motion.div>
             <motion.div
@@ -227,7 +227,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="bg-white p-6 rounded-2xl shadow-lg text-center"
             >
-              <div className="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+              <div className="text-3xl font-bold text-[#0f20a7] mb-2">24/7</div>
               <div className="text-gray-600">دعم متواصل</div>
             </motion.div>
             <motion.div
@@ -237,7 +237,7 @@ export default function Home() {
               transition={{ delay: 0.3 }}
               className="bg-white p-6 rounded-2xl shadow-lg text-center"
             >
-              <div className="text-3xl font-bold text-rose-600 mb-2">15+</div>
+              <div className="text-3xl font-bold text-[#df3f41] mb-2">15+</div>
               <div className="text-gray-600">سنة خبرة</div>
             </motion.div>
           </div>
@@ -246,12 +246,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-blue-50 to-violet-50 p-8 rounded-2xl shadow-lg border border-blue-100/20"
+              className="bg-gradient-to-br from-[#0f20a7]/5 to-[#df3f41]/5 p-8 rounded-2xl shadow-lg border border-[#0f20a7]/20"
             >
-              <div className="bg-blue-500/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-[#0f20a7]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-blue-900">تعلم مخصص لأهدافك</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0f20a7]">تعلم مخصص لأهدافك</h3>
               <p className="text-gray-600">
                 منهج تعليمي مصمم خصيصاً لمستواك وأهدافك، مع متابعة مستمرة لتقدمك
               </p>
@@ -259,12 +259,12 @@ export default function Home() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-violet-50 to-purple-50 p-8 rounded-2xl shadow-lg border border-violet-100/20"
+              className="bg-gradient-to-br from-[#df3f41]/5 to-[#0f20a7]/5 p-8 rounded-2xl shadow-lg border border-[#df3f41]/20"
             >
-              <div className="bg-violet-500/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-[#df3f41]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">💫</span>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-violet-900">مدربون محترفون</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#df3f41]">مدربون محترفون</h3>
               <p className="text-gray-600">
                 نخبة من المدربين المعتمدين دولياً مع خبرة تدريس تتجاوز 10 سنوات
               </p>
@@ -272,12 +272,12 @@ export default function Home() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-purple-50 to-rose-50 p-8 rounded-2xl shadow-lg border border-purple-100/20"
+              className="bg-gradient-to-br from-[#0f20a7]/5 to-[#df3f41]/5 p-8 rounded-2xl shadow-lg border border-[#0f20a7]/20"
             >
-              <div className="bg-purple-500/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
+              <div className="bg-[#0f20a7]/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6">
                 <span className="text-2xl">🚀</span>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-purple-900">تقدم سريع</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0f20a7]">تقدم سريع</h3>
               <p className="text-gray-600">
                 تقنيات تعلم متقدمة تساعدك على تحقيق أهدافك بأسرع وقت ممكن
               </p>
@@ -289,7 +289,7 @@ export default function Home() {
         <motion.div 
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
-          className="bg-gradient-to-r from-violet-600 to-purple-800 text-white p-8 rounded-2xl mb-12 shadow-xl"
+          className="bg-gradient-to-r from-[#0f20a7] to-[#df3f41] text-white p-8 rounded-2xl mb-12 shadow-xl"
         >
           <h2 className="text-3xl font-bold mb-8 text-right">🎁 جوائز حصرية تنتظرك!</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -319,7 +319,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center gap-4 bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300"
             >
-              <FaFootballBall className="text-5xl text-yellow-300" />
+              <FaFutbol className="text-5xl text-yellow-300" />
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-2">تذاكر VIP</h3>
                 <p className="text-sm text-gray-200">لحضور أهم مباريات الدوري الإنجليزي في موسم 2024</p>
@@ -343,7 +343,7 @@ export default function Home() {
               className="bg-white p-8 rounded-xl shadow-lg border border-gray-100"
             >
               <div dir="rtl">
-                <h3 className="text-2xl font-bold mb-6 text-blue-900">🔹 تعلم مخصص ومرونة مطلقة</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#0f20a7]">🔹 تعلم مخصص ومرونة مطلقة</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <BsCheckCircleFill className="text-green-500 flex-shrink-0 text-xl" />
@@ -366,7 +366,7 @@ export default function Home() {
               className="bg-white p-8 rounded-xl shadow-lg border border-gray-100"
             >
               <div dir="rtl">
-                <h3 className="text-2xl font-bold mb-6 text-blue-900">🔹 مميزات حصرية للأعضاء</h3>
+                <h3 className="text-2xl font-bold mb-6 text-[#0f20a7]">🔹 مميزات حصرية للأعضاء</h3>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <BsCheckCircleFill className="text-green-500 flex-shrink-0 text-xl" />
@@ -387,9 +387,9 @@ export default function Home() {
         </section>
 
         {/* Enhanced CTA Section */}
-        <div className="text-center mb-16 bg-gradient-to-r from-blue-50 to-violet-50 p-8 rounded-2xl shadow-lg">
+        <div className="text-center mb-16 bg-gradient-to-r from-[#0f20a7]/5 to-[#df3f41]/5 p-8 rounded-2xl shadow-lg">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#0f20a7] to-[#df3f41]">
               ابدأ رحلتك نحو إتقان اللغة الإنجليزية اليوم!
             </h2>
             <p className="text-lg mb-8 text-gray-600">
@@ -399,7 +399,7 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-violet-600 to-purple-600 text-white text-xl px-12 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 font-bold"
+              className="bg-gradient-to-r from-[#0f20a7] to-[#df3f41] text-white text-xl px-12 py-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 font-bold"
               onClick={() => window.location.href = '/sales'}
             >
               👉 سجل الآن واحصل على خصم 50%
