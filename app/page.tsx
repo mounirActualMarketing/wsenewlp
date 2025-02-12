@@ -90,7 +90,7 @@ export default function Home() {
     }, 8000);
 
     return () => clearInterval(reviewsInterval);
-  }, []);
+  }, [reviews]);
 
   return (
     <div className="font-noto">
@@ -472,8 +472,8 @@ export default function Home() {
                   <span className="text-sm text-gray-500">{currentReview.time}</span>
                 </div>
                 <div className="flex text-yellow-400 text-sm mb-1">{'★'.repeat(5)}</div>
-                <p className="text-sm text-gray-600">
-                  "{currentReview.text}"
+                <p className="text-gray-700">
+                  &ldquo;{currentReview.text}&rdquo;
                 </p>
               </div>
             </div>

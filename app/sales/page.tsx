@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { BsCheckCircleFill, BsWhatsapp, BsShieldCheck, BsCreditCard } from "react-icons/bs";
-import { FaGraduationCap, FaUsers, FaTrophy } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
